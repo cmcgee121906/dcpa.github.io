@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dcpaGreen: '#1B3022',
+                        dcpaGold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['Georgia', 'serif'],
+                        sans: ['Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Header / Navigation (Same as Index) -->
+    <header class="bg-dcpaGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-16 h-16 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-xs text-center p-1">
+                    DESERT CRESCENT
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight uppercase">Desert Crescent</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <div class="relative dropdown group">
+                    <a href="about.html" class="text-dcpaGold flex items-center">ABOUT <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
+                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
+                        <a href="#mission" class="block px-4 py-2 hover:bg-gray-100">Mission & Vision</a>
+                        <a href="#leadership" class="block px-4 py-2 hover:bg-gray-100">Leadership</a>
+                        <a href="#history" class="block px-4 py-2 hover:bg-gray-100">Our History</a>
+                    </div>
+                </div>
+                <div class="relative dropdown group">
+                    <a href="academics.html" class="hover:text-dcpaGold flex items-center">ACADEMICS <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
+                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
+                        <a href="academics.html#curriculum" class="block px-4 py-2 hover:bg-gray-100">Curriculum</a>
+                        <a href="academics.html#departments" class="block px-4 py-2 hover:bg-gray-100">Departments</a>
+                        <a href="academics.html#library" class="block px-4 py-2 hover:bg-gray-100">Library</a>
+                    </div>
+                </div>
+                <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
+                <div class="relative dropdown group">
+                    <a href="student-life.html" class="hover:text-dcpaGold flex items-center">STUDENT LIFE <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
+                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
+                        <a href="student-life.html#clubs" class="block px-4 py-2 hover:bg-gray-100">Clubs & Orgs</a>
+                        <a href="student-life.html#athletics" class="block px-4 py-2 hover:bg-gray-100">Athletics</a>
+                        <a href="student-life.html#arts" class="block px-4 py-2 hover:bg-gray-100">Fine Arts</a>
+                    </div>
+                </div>
+                <div class="relative dropdown group">
+                    <a href="parents.html" class="hover:text-dcpaGold flex items-center">PARENTS <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
+                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
+                        <a href="parents.html#portal" class="block px-4 py-2 hover:bg-gray-100">Parent Portal</a>
+                        <a href="parents.html#calendar" class="block px-4 py-2 hover:bg-gray-100">Calendar</a>
+                        <a href="parents.html#handbook" class="block px-4 py-2 hover:bg-gray-100">Handbook</a>
+                    </div>
+                </div>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition duration-300">APPLY NOW</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Subpage Hero -->
+    <section class="bg-dcpaGreen text-white py-20 relative overflow-hidden">
+         <div class="absolute inset-0 z-0 opacity-20">
+            <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-5xl font-serif font-bold">About Us</h1>
+            <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Rooted in Values. Rising to Excellence.</p>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section id="mission" class="py-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-serif font-bold text-dcpaGreen mb-6">Our Mission & Vision</h2>
+            <div class="prose prose-lg text-gray-700">
+                <p class="mb-4">Desert Crescent Preparatory Academy (DCPA) is dedicated to providing a high-quality education that integrates rigorous academics with strong moral values. Our mission is to cultivate curious minds, build resilient character, and foster a lifelong love of learning within a supportive community.</p>
+                <p>We envision a school where every student is empowered to achieve their full potential, grounded in their heritage and prepared to lead with integrity and compassion in a global society.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-dcpaGold">
+                    <h3 class="font-bold text-dcpaGreen text-xl mb-4">Core Values</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-dcpaGold mr-3 font-bold">QURAN:</span>
+                            <span class="text-sm">Providing spiritual guidance and a moral compass for life.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-dcpaGold mr-3 font-bold">ILM:</span>
+                            <span class="text-sm">The pursuit of knowledge as a lifelong journey.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-dcpaGold mr-3 font-bold">AKHLAQ:</span>
+                            <span class="text-sm">Developing excellent character and ethical behavior.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-dcpaGold mr-3 font-bold">AMAL:</span>
+                            <span class="text-sm">Translating knowledge and values into positive action.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-dcpaGreen text-white p-8 rounded-lg shadow-md">
+                    <h3 class="font-bold text-dcpaGold text-xl mb-4">Our Mascot: Noor the Falcon</h3>
+                    <p class="text-sm opacity-80 mb-4">Noor represents the keen sight, swift action, and noble spirit we encourage in our students. Like the falcon, our students are taught to soar high while remaining rooted in the values that define them.</p>
+                    <div class="text-center mt-6">
+                        <img src="https://via.placeholder.com/200x200?text=Noor+the+Falcon" alt="Noor" class="mx-auto rounded-full border-4 border-dcpaGold w-32 h-32">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-dcpaGreen text-white py-12 border-t-8 border-dcpaGold">
+        <div class="container mx-auto px-6">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">
+                            DESERT CRESCENT
+                        </div>
+                        <div>
+                            <h3 class="font-bold uppercase text-sm">Desert Crescent</h3>
+                            <p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
+                        </div>
+                    </div>
+                    <p class="text-sm opacity-60 italic mb-4">Rooted in Values. Rising to Excellence.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold uppercase text-sm mb-6 tracking-widest">Contact</h4>
+                    <div class="space-y-4 text-sm opacity-80">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-dcpaGold"></i>
+                            <span>10750 W Van Buren St,<br>Avondale, AZ 85323</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-dcpaGold"></i>
+                            <span>480.333.0123</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-dcpaGold"></i>
+                            <span>info@desertcrescent.org</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase text-sm mb-6 tracking-widest">Connect</h4>
+                    <div class="flex space-x-4 mb-8">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-dcpaGold hover:text-dcpaGreen transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-dcpaGold hover:text-dcpaGreen transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-dcpaGold hover:text-dcpaGreen transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-dcpaGold hover:text-dcpaGreen transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:row justify-between items-center text-[10px] opacity-40 uppercase tracking-widest">
+                <p>&copy; 2024 Desert Crescent Preparatory Academy. All Rights Reserved. <br> www.desertcrescent.org</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

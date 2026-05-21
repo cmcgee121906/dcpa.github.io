@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dcpaGreen: '#1B3022',
+                        dcpaGold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <header class="bg-dcpaGreen text-white py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
+                <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center text-sm">
+                <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
+                <a href="academics.html" class="hover:text-dcpaGold">ACADEMICS</a>
+                <a href="admissions.html" class="text-dcpaGold">ADMISSIONS</a>
+                <a href="student-life.html" class="hover:text-dcpaGold">STUDENT LIFE</a>
+                <a href="parents.html" class="hover:text-dcpaGold">PARENTS</a>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-4 py-2 rounded font-bold">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-dcpaGreen text-white py-20 text-center">
+        <h1 class="text-5xl font-serif font-bold">Join Our Community</h1>
+        <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Your journey to excellence starts here.</p>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-serif font-bold text-dcpaGreen">Admissions Process</h2>
+                    <p class="text-gray-700">We seek to admit students who will thrive in our academic environment and contribute positively to our community.</p>
+                    <ol class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="bg-dcpaGold text-dcpaGreen w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">1</span>
+                            <div>
+                                <h4 class="font-bold">Inquiry</h4>
+                                <p class="text-sm opacity-70">Complete an inquiry form to receive more information.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-dcpaGold text-dcpaGreen w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">2</span>
+                            <div>
+                                <h4 class="font-bold">Tour</h4>
+                                <p class="text-sm opacity-70">Schedule a visit to see our campus in action.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-dcpaGold text-dcpaGreen w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">3</span>
+                            <div>
+                                <h4 class="font-bold">Apply</h4>
+                                <p class="text-sm opacity-70">Submit your application and required documents.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-dcpaGold text-dcpaGreen w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">4</span>
+                            <div>
+                                <h4 class="font-bold">Interview</h4>
+                                <p class="text-sm opacity-70">We meet with students and families as part of the review process.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-xl border-t-8 border-dcpaGold flex flex-col justify-center text-center">
+                    <h3 class="text-2xl font-bold text-dcpaGreen mb-6">Upcoming Open House</h3>
+                    <div class="text-4xl font-bold text-dcpaGold mb-2">May 23</div>
+                    <p class="text-sm uppercase tracking-widest mb-6">6:00 PM - 8:00 PM</p>
+                    <p class="text-gray-600 mb-8">Meet our faculty, tour the facilities, and learn about our unique approach to education.</p>
+                    <a href="#" class="bg-dcpaGreen text-white py-3 rounded font-bold hover:bg-dcpaLightGreen transition">REGISTER FOR OPEN HOUSE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
+        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    </footer>
+</body>
+</html>

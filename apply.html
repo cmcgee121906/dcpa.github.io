@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dcpaGreen: '#1B3022',
+                        dcpaGold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <header class="bg-dcpaGreen text-white py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
+                <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center text-sm">
+                <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
+                <a href="academics.html" class="hover:text-dcpaGold">ACADEMICS</a>
+                <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
+                <a href="student-life.html" class="hover:text-dcpaGold">STUDENT LIFE</a>
+                <a href="parents.html" class="hover:text-dcpaGold">PARENTS</a>
+                <a href="apply.html" class="text-dcpaGold font-bold">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <div class="bg-white p-12 rounded-2xl shadow-2xl border-t-8 border-dcpaGold">
+                <h1 class="text-4xl font-serif font-bold text-dcpaGreen mb-4">Application for Admission</h1>
+                <p class="text-gray-600 mb-8">Please fill out the form below to begin the application process. A member of our admissions team will contact you shortly.</p>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Parent First Name</label>
+                            <input type="text" class="w-full border-b-2 border-gray-200 focus:border-dcpaGold outline-none py-2 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Parent Last Name</label>
+                            <input type="text" class="w-full border-b-2 border-gray-200 focus:border-dcpaGold outline-none py-2 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Email Address</label>
+                        <input type="email" class="w-full border-b-2 border-gray-200 focus:border-dcpaGold outline-none py-2 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Student Name</label>
+                        <input type="text" class="w-full border-b-2 border-gray-200 focus:border-dcpaGold outline-none py-2 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-2">Applying for Grade</label>
+                        <select class="w-full border-b-2 border-gray-200 focus:border-dcpaGold outline-none py-2 transition">
+                            <option>Pre-K</option>
+                            <option>Kindergarten</option>
+                            <option>Grade 1</option>
+                            <option>Grade 2</option>
+                            <option>Grade 3</option>
+                            <option>Grade 4</option>
+                            <option>Grade 5</option>
+                            <option>Middle School (6-8)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-dcpaGreen text-white font-bold py-4 rounded-lg hover:bg-dcpaLightGreen transition shadow-lg">SUBMIT APPLICATION</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
+        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    </footer>
+</body>
+</html>

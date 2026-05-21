@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dcpaGreen: '#1B3022',
+                        dcpaGold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <header class="bg-dcpaGreen text-white py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
+                <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center text-sm">
+                <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
+                <a href="academics.html" class="hover:text-dcpaGold">ACADEMICS</a>
+                <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
+                <a href="student-life.html" class="text-dcpaGold">STUDENT LIFE</a>
+                <a href="parents.html" class="hover:text-dcpaGold">PARENTS</a>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-4 py-2 rounded font-bold">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-dcpaGreen text-white py-20 text-center bg-[url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center bg-blend-overlay">
+        <h1 class="text-5xl font-serif font-bold">Student Life</h1>
+        <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Discover your passion. Lead with purpose.</p>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                    <i class="fas fa-users text-4xl text-dcpaGold mb-6"></i>
+                    <h3 class="text-xl font-bold text-dcpaGreen mb-4">Clubs & Organizations</h3>
+                    <p class="text-sm text-gray-600">From Robotics to Debating, our clubs provide students with opportunities to explore interests and develop leadership skills.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                    <i class="fas fa-running text-4xl text-dcpaGold mb-6"></i>
+                    <h3 class="text-xl font-bold text-dcpaGreen mb-4">Athletics</h3>
+                    <p class="text-sm text-gray-600">Our sports programs emphasize teamwork, discipline, and healthy competition under the spirit of the Falcon.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                    <i class="fas fa-palette text-4xl text-dcpaGold mb-6"></i>
+                    <h3 class="text-xl font-bold text-dcpaGreen mb-4">Fine Arts</h3>
+                    <p class="text-sm text-gray-600">Cultivating creativity through music, visual arts, and performance, celebrating our rich cultural heritage.</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 flex flex-col md:flex-row items-center gap-12 bg-dcpaGreen text-white p-12 rounded-2xl shadow-2xl">
+                <div class="md:w-1/3">
+                    <img src="https://via.placeholder.com/300x400?text=Noor+the+Falcon" alt="Mascot" class="rounded-lg border-4 border-dcpaGold">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-serif font-bold mb-6">The Falcon Spirit</h2>
+                    <p class="text-lg opacity-80 mb-6">"Noor the Falcon" isn't just a mascot; it's a symbol of the excellence we strive for. Our students embody the traits of the falcon—vision, speed, and nobility—in everything they do.</p>
+                    <div class="flex space-x-4">
+                        <span class="bg-dcpaGold text-dcpaGreen px-4 py-1 rounded-full text-sm font-bold">Leadership</span>
+                        <span class="bg-dcpaGold text-dcpaGreen px-4 py-1 rounded-full text-sm font-bold">Integrity</span>
+                        <span class="bg-dcpaGold text-dcpaGreen px-4 py-1 rounded-full text-sm font-bold">Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
+        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dcpaGreen: '#1B3022',
+                        dcpaGold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['Georgia', 'serif'],
+                        sans: ['Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation (Simplified for brevity in bash script) -->
+    <header class="bg-dcpaGreen text-white py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
+                <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center text-sm">
+                <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
+                <a href="academics.html" class="text-dcpaGold">ACADEMICS</a>
+                <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
+                <a href="student-life.html" class="hover:text-dcpaGold">STUDENT LIFE</a>
+                <a href="parents.html" class="hover:text-dcpaGold">PARENTS</a>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-4 py-2 rounded font-bold">APPLY</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-dcpaGreen text-white py-20 bg-[url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=2073')] bg-cover bg-center bg-blend-overlay">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-serif font-bold">Academics</h1>
+            <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Excellence in every lesson.</p>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-2 space-y-8">
+                    <h2 class="text-3xl font-serif font-bold text-dcpaGreen">Rigorous & Integrated Curriculum</h2>
+                    <p class="text-gray-700">At DCPA, we provide a dual-curriculum approach that meets the highest state standards while integrating spiritual and moral development. Our students excel in core subjects like Mathematics, Science, and Language Arts, while also gaining a deep understanding of their heritage.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-dcpaGold pl-6">
+                            <h3 class="font-bold text-xl text-dcpaGreen mb-2">Early Childhood</h3>
+                            <p class="text-sm text-gray-600">Fostering wonder and foundational skills in a nurturing environment.</p>
+                        </div>
+                        <div class="border-l-4 border-dcpaGold pl-6">
+                            <h3 class="font-bold text-xl text-dcpaGreen mb-2">Elementary School</h3>
+                            <p class="text-sm text-gray-600">Building strong foundations in literacy, numeracy, and character.</p>
+                        </div>
+                        <div class="border-l-4 border-dcpaGold pl-6">
+                            <h3 class="font-bold text-xl text-dcpaGreen mb-2">Middle School</h3>
+                            <p class="text-sm text-gray-600">Empowering critical thinking and personal responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-gray-100 p-8 rounded-lg">
+                        <h3 class="font-bold text-dcpaGreen text-xl mb-4">Core Focus Areas</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-dcpaGold mr-2"></i> STEM Education</li>
+                            <li class="flex items-center"><i class="fas fa-check text-dcpaGold mr-2"></i> Quranic Studies</li>
+                            <li class="flex items-center"><i class="fas fa-check text-dcpaGold mr-2"></i> Arabic Language</li>
+                            <li class="flex items-center"><i class="fas fa-check text-dcpaGold mr-2"></i> Humanities & Arts</li>
+                            <li class="flex items-center"><i class="fas fa-check text-dcpaGold mr-2"></i> Physical Education</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-dcpaGold p-8 rounded-lg text-dcpaGreen">
+                        <h3 class="font-bold text-xl mb-4">The "Ilm" Pillar</h3>
+                        <p class="text-sm">"Seek knowledge from the cradle to the grave." We instill a mindset of continuous growth and intellectual curiosity in every student.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
+        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    </footer>
+</body>
+</html>
