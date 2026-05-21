@@ -18,47 +18,56 @@
             }
         }
     </script>
+    <style>
+        .dropdown:hover .dropdown-menu { display: block; }
+    </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
-    <header class="bg-dcpaGreen text-white py-4 px-6">
-        <div class="container mx-auto flex justify-between items-center">
+
+    <!-- Header -->
+    <header class="bg-dcpaGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <a href="index.html" class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
-                <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+                <div class="w-16 h-16 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-xs text-center p-1">DESERT CRESCENT</div>
+                <div>
+                    <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
+                </div>
             </a>
-            <nav class="hidden md:flex space-x-6 items-center text-sm">
+            <nav class="hidden md:flex space-x-8 items-center text-sm">
                 <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
                 <a href="academics.html" class="hover:text-dcpaGold">ACADEMICS</a>
                 <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
                 <a href="student-life.html" class="text-dcpaGold">STUDENT LIFE</a>
                 <a href="parents.html" class="hover:text-dcpaGold">PARENTS</a>
-                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-4 py-2 rounded font-bold">APPLY</a>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition">APPLY NOW</a>
             </nav>
         </div>
     </header>
 
+    <!-- Hero -->
     <section class="bg-dcpaGreen text-white py-20 text-center bg-[url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center bg-blend-overlay">
         <h1 class="text-5xl font-serif font-bold">Student Life</h1>
         <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Discover your passion. Lead with purpose.</p>
     </section>
 
+    <!-- Content -->
     <section class="py-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                <div id="clubs" class="bg-white p-8 rounded shadow hover:shadow-lg transition border-t-4 border-dcpaGold">
                     <i class="fas fa-users text-4xl text-dcpaGold mb-6"></i>
                     <h3 class="text-xl font-bold text-dcpaGreen mb-4">Clubs & Organizations</h3>
-                    <p class="text-sm text-gray-600">From Robotics to Debating, our clubs provide students with opportunities to explore interests and develop leadership skills.</p>
+                    <p class="text-sm text-gray-600">From Robotics to Debating, our clubs provide students with opportunities to explore interests.</p>
                 </div>
-                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                <div id="athletics" class="bg-white p-8 rounded shadow hover:shadow-lg transition border-t-4 border-dcpaGold">
                     <i class="fas fa-running text-4xl text-dcpaGold mb-6"></i>
                     <h3 class="text-xl font-bold text-dcpaGreen mb-4">Athletics</h3>
-                    <p class="text-sm text-gray-600">Our sports programs emphasize teamwork, discipline, and healthy competition under the spirit of the Falcon.</p>
+                    <p class="text-sm text-gray-600">Our sports programs emphasize teamwork, discipline, and healthy competition.</p>
                 </div>
-                <div class="bg-white p-8 rounded shadow hover:shadow-lg transition">
+                <div id="arts" class="bg-white p-8 rounded shadow hover:shadow-lg transition border-t-4 border-dcpaGold">
                     <i class="fas fa-palette text-4xl text-dcpaGold mb-6"></i>
                     <h3 class="text-xl font-bold text-dcpaGreen mb-4">Fine Arts</h3>
-                    <p class="text-sm text-gray-600">Cultivating creativity through music, visual arts, and performance, celebrating our rich cultural heritage.</p>
+                    <p class="text-sm text-gray-600">Cultivating creativity through music, visual arts, and performance.</p>
                 </div>
             </div>
             
@@ -68,7 +77,7 @@
                 </div>
                 <div class="md:w-2/3">
                     <h2 class="text-3xl font-serif font-bold mb-6">The Falcon Spirit</h2>
-                    <p class="text-lg opacity-80 mb-6">"Noor the Falcon" isn't just a mascot; it's a symbol of the excellence we strive for. Our students embody the traits of the falcon—vision, speed, and nobility—in everything they do.</p>
+                    <p class="text-lg opacity-80 mb-6">"Noor the Falcon" is a symbol of the excellence we strive for. Our students embody vision, speed, and nobility.</p>
                     <div class="flex space-x-4">
                         <span class="bg-dcpaGold text-dcpaGreen px-4 py-1 rounded-full text-sm font-bold">Leadership</span>
                         <span class="bg-dcpaGold text-dcpaGreen px-4 py-1 rounded-full text-sm font-bold">Integrity</span>
@@ -79,8 +88,11 @@
         </div>
     </section>
 
-    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
-        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    <!-- Footer -->
+    <footer class="bg-dcpaGreen text-white py-12 border-t-8 border-dcpaGold text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-sm opacity-60 mb-4">&copy; 2024 Desert Crescent Preparatory Academy. <br> www.desertcrescent.org</p>
+        </div>
     </footer>
 </body>
 </html>

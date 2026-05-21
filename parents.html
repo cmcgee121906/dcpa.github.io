@@ -18,62 +18,69 @@
             }
         }
     </script>
+    <style>
+        .dropdown:hover .dropdown-menu { display: block; }
+    </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
-    <header class="bg-dcpaGreen text-white py-4 px-6">
-        <div class="container mx-auto flex justify-between items-center">
+
+    <!-- Header -->
+    <header class="bg-dcpaGreen text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <a href="index.html" class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-[8px] text-center p-1">DCPA</div>
+                <div class="w-16 h-16 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-xs text-center p-1">DESERT CRESCENT</div>
                 <h1 class="text-xl font-bold uppercase">Desert Crescent</h1>
             </a>
-            <nav class="hidden md:flex space-x-6 items-center text-sm">
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
                 <a href="about.html" class="hover:text-dcpaGold">ABOUT</a>
                 <a href="academics.html" class="hover:text-dcpaGold">ACADEMICS</a>
                 <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
                 <a href="student-life.html" class="hover:text-dcpaGold">STUDENT LIFE</a>
                 <a href="parents.html" class="text-dcpaGold">PARENTS</a>
-                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-4 py-2 rounded font-bold">APPLY</a>
+                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition duration-300">APPLY NOW</a>
             </nav>
         </div>
     </header>
 
+    <!-- Hero -->
     <section class="bg-dcpaGreen text-white py-20 text-center">
         <h1 class="text-5xl font-serif font-bold">Parent Resources</h1>
         <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Partners in education.</p>
     </section>
 
+    <!-- Content -->
     <section class="py-16">
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <a href="#" class="flex items-center p-8 bg-white rounded-lg shadow border-l-8 border-dcpaGold hover:shadow-lg transition">
+                <div id="portal" class="flex items-center p-8 bg-white rounded-lg shadow border-l-8 border-dcpaGold hover:shadow-lg transition">
                     <i class="fas fa-laptop text-4xl text-dcpaGreen mr-6"></i>
                     <div>
-                        <h3 class="font-bold text-xl">Parent Portal</h3>
-                        <p class="text-sm opacity-60">Access grades, attendance, and more.</p>
+                        <h3 class="font-bold text-xl text-dcpaGreen">Parent Portal</h3>
+                        <p class="text-sm opacity-60">Access grades, attendance, and assignments.</p>
                     </div>
-                </a>
-                <a href="#" class="flex items-center p-8 bg-white rounded-lg shadow border-l-8 border-dcpaGold hover:shadow-lg transition">
+                </div>
+                <div id="calendar" class="flex items-center p-8 bg-white rounded-lg shadow border-l-8 border-dcpaGold hover:shadow-lg transition">
                     <i class="fas fa-calendar-alt text-4xl text-dcpaGreen mr-6"></i>
                     <div>
-                        <h3 class="font-bold text-xl">School Calendar</h3>
+                        <h3 class="font-bold text-xl text-dcpaGreen">School Calendar</h3>
                         <p class="text-sm opacity-60">Stay updated on events and holidays.</p>
                     </div>
-                </a>
+                </div>
             </div>
             
-            <div class="bg-white p-12 rounded-lg shadow-md">
+            <div id="handbook" class="bg-white p-12 rounded-lg shadow-md border-t-8 border-dcpaGold">
                 <h2 class="text-2xl font-serif font-bold text-dcpaGreen mb-8">Important Documents</h2>
                 <div class="space-y-4">
                     <div class="flex justify-between items-center p-4 border-b">
-                        <span class="font-medium">Student & Parent Handbook 2024-2025</span>
+                        <span class="font-medium text-dcpaGreen">Student & Parent Handbook 2024-2025</span>
                         <a href="#" class="text-dcpaGold font-bold hover:underline">DOWNLOAD PDF</a>
                     </div>
                     <div class="flex justify-between items-center p-4 border-b">
-                        <span class="font-medium">Uniform Policy</span>
+                        <span class="font-medium text-dcpaGreen">Uniform Policy</span>
                         <a href="#" class="text-dcpaGold font-bold hover:underline">DOWNLOAD PDF</a>
                     </div>
-                    <div class="flex justify-between items-center p-4 border-b">
-                        <span class="font-medium">Supply List by Grade</span>
+                    <div class="flex justify-between items-center p-4">
+                        <span class="font-medium text-dcpaGreen">Supply List by Grade</span>
                         <a href="#" class="text-dcpaGold font-bold hover:underline">VIEW LIST</a>
                     </div>
                 </div>
@@ -81,8 +88,12 @@
         </div>
     </section>
 
-    <footer class="bg-dcpaGreen text-white py-12 text-center text-xs opacity-60">
-        <p>&copy; 2024 Desert Crescent Preparatory Academy</p>
+    <!-- Footer -->
+    <footer class="bg-dcpaGreen text-white py-12 border-t-8 border-dcpaGold text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-sm opacity-60">&copy; 2024 Desert Crescent Preparatory Academy. <br> www.desertcrescent.org</p>
+        </div>
     </footer>
+
 </body>
 </html>
