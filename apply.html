@@ -69,7 +69,7 @@
                         <a href="parents.html#handbook" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Important Documents</a>
                     </div>
                 </div>
-                <a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="btn-gold px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
+                <a href="apply.html" target="_blank" rel="noopener noreferrer" class="btn-gold px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
             </nav>
 
             <!-- Mobile Hamburger Button -->
@@ -156,7 +156,7 @@
         </div>
 
         <div class="pt-8">
-            <a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
+            <a href="apply.html" target="_blank" rel="noopener noreferrer" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
         </div>
     </aside>
 
@@ -166,23 +166,36 @@
         <div class="container mx-auto px-6 max-w-3xl animate-fade-in-up">
             <div class="glass-card p-8 sm:p-16 rounded-3xl border-t-8 border-dcpaGold shadow-2xl relative">
                 <h1 class="text-4xl font-serif font-bold text-dcpaGreen mb-3">Application for Admission</h1>
-                <p class="text-xs text-gray-500 mb-10 leading-relaxed">The application form is hosted by Google Forms so that all submissions are submitted directly into the admissions pipeline. If the embedded form does not display, please open the full form in a new tab.</p>
+                <p class="text-xs text-gray-500 mb-10 leading-relaxed">Please enter your basic family details below, then continue to the full Google application form for final submission.</p>
 
-                <div class="rounded-3xl overflow-hidden border border-gray-200 shadow-lg bg-white">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?embedded=true"
-                        width="100%"
-                        height="1600"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
-                        class="min-h-[900px] w-full"
-                    >Loading…</iframe>
-                </div>
+                <form id="apply-form" class="space-y-8" method="GET" action="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form">
+                    <div class="grid grid-cols-1 gap-8">
+                        <div>
+                            <label for="parent-name" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent/Guardian Full Name *</label>
+                            <input id="parent-name" name="parent-name" type="text" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Tariq Al-Jamil">
+                        </div>
+                        <div>
+                            <label for="parent-email" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent Email Address *</label>
+                            <input id="parent-email" name="parent-email" type="email" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. parent@example.com">
+                        </div>
+                        <div>
+                            <label for="parent-phone" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent Phone Number *</label>
+                            <input id="parent-phone" name="parent-phone" type="tel" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. (480) 333-0123">
+                        </div>
+                        <div>
+                            <label for="student-name" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Student Full Name *</label>
+                            <input id="student-name" name="student-name" type="text" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Layla Al-Jamil">
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <button type="submit" class="w-full bg-dcpaGreen text-white rounded-2xl py-4 font-bold uppercase tracking-widest text-sm shadow-xl hover:bg-dcpaGold hover:text-dcpaGreen transition-colors duration-300">Submit and Continue</button>
+                    </div>
+                </form>
 
                 <div class="mt-8 text-center">
-                    <p class="text-[10px] text-gray-500 mb-4">If the form is not visible above, open it directly in Google Forms:</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" class="inline-block btn-emerald px-10 py-4 rounded-xl font-bold text-xs uppercase tracking-widest shadow-xl transition-all duration-300">Open Google Form</a>
+                    <p class="text-[10px] text-gray-500 mb-4">If the form does not load, you can continue directly on Google Forms.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" class="inline-block bg-dcpaGreen text-white px-8 py-3 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-dcpaGold hover:text-dcpaGreen transition-colors duration-300">Open Google Form</a>
                 </div>
             </div>
         </div>
@@ -218,7 +231,7 @@
                         <li><a href="admissions.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Admissions</a></li>
                         <li><a href="student-life.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Student Life</a></li>
                         <li><a href="parents.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Parents</a></li>
-                        <li><a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="hover:text-dcpaGold transition-colors flex items-center font-bold"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Apply Now</a></li>
+                        <li><a href="apply.html" target="_blank" rel="noopener noreferrer" class="hover:text-dcpaGold transition-colors flex items-center font-bold"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Apply Now</a></li>
                     </ul>
                 </div>
             </div>
