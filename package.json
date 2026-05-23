@@ -1,0 +1,26 @@
+{
+  "name": "dcpa.github.io",
+  "version": "1.0.0",
+  "description": "Official website for DCPA (Davidson County Public Academy), hosted via GitHub Pages.",
+  "main": "menu.js",
+  "scripts": {
+    "test": "playwright test",
+    "playwright-check": "node scripts/run-playwright-check.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmcgee121906/dcpa.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cmcgee121906/dcpa.github.io/issues"
+  },
+  "homepage": "https://github.com/cmcgee121906/dcpa.github.io#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "playwright": "^1.60.0"
+  }
+}

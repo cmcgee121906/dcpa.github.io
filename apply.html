@@ -27,7 +27,7 @@
     <header class="glass-header text-white sticky top-0 z-50 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <a href="index.html" class="flex items-center space-x-3 group">
-                <img src="dcpa-logo.jpeg" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover group-hover:rotate-6 transition-all duration-500">
+                <img src="dcpa-logo.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover group-hover:rotate-6 transition-all duration-500">
                 <div>
                     <h1 class="text-xl font-bold uppercase tracking-tight font-serif text-white group-hover:text-dcpaGold transition-colors">Desert Crescent</h1>
                     <p class="text-[10px] uppercase tracking-widest text-dcpaGold font-medium">Preparatory Academy</p>
@@ -69,7 +69,7 @@
                         <a href="parents.html#handbook" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Important Documents</a>
                     </div>
                 </div>
-                <a href="apply.html" class="btn-gold px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
+                <a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="btn-gold px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
             </nav>
 
             <!-- Mobile Hamburger Button -->
@@ -89,7 +89,7 @@
         <div class="space-y-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-3">
-                    <img src="dcpa-logo.jpeg" alt="DCPA Logo" class="w-10 h-10 rounded-full border border-dcpaGold/30 object-cover">
+                    <img src="dcpa-logo.png" alt="DCPA Logo" class="w-10 h-10 rounded-full border border-dcpaGold/30 object-cover">
                     <div>
                         <h2 class="text-sm font-bold uppercase tracking-tight text-white font-serif">Desert Crescent</h2>
                         <p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
@@ -156,59 +156,34 @@
         </div>
 
         <div class="pt-8">
-            <a href="apply.html" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
+            <a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
         </div>
     </aside>
 
     <!-- Form Section -->
     <section class="py-24 relative overflow-hidden">
         <div class="absolute inset-0 bg-dcpaGreen/5 -z-10"></div>
-        <div class="container mx-auto px-6 max-w-2xl animate-fade-in-up">
+        <div class="container mx-auto px-6 max-w-3xl animate-fade-in-up">
             <div class="glass-card p-8 sm:p-16 rounded-3xl border-t-8 border-dcpaGold shadow-2xl relative">
                 <h1 class="text-4xl font-serif font-bold text-dcpaGreen mb-3">Application for Admission</h1>
-                <p class="text-xs text-gray-500 mb-10 leading-relaxed">Begin your child's educational excellence. Provide accurate credentials below. Our admissions desk will analyze submissions and schedule coordinates within 2 business days.</p>
-                
-                <form id="apply-form" class="space-y-8" action="success.html" method="GET">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        <div>
-                            <label for="parent-first" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent First Name *</label>
-                            <input id="parent-first" type="text" required class="w-full form-input py-2.5 text-sm font-semibold border-b border-gray-200 focus:border-dcpaGold" placeholder="e.g. Tariq">
-                        </div>
-                        <div>
-                            <label for="parent-last" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent Last Name *</label>
-                            <input id="parent-last" type="text" required class="w-full form-input py-2.5 text-sm font-semibold border-b border-gray-200 focus:border-dcpaGold" placeholder="e.g. Al-Jamil">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Email Address *</label>
-                        <input id="email" type="email" required class="w-full form-input py-2.5 text-sm font-semibold border-b border-gray-200 focus:border-dcpaGold" placeholder="e.g. parent@example.com">
-                    </div>
-                    
-                    <div>
-                        <label for="student-name" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Student Full Name *</label>
-                        <input id="student-name" type="text" required class="w-full form-input py-2.5 text-sm font-semibold border-b border-gray-200 focus:border-dcpaGold" placeholder="e.g. Layla Al-Jamil">
-                    </div>
-                    
-                    <div>
-                        <label for="grade" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Applying for Grade Level *</label>
-                        <select id="grade" required class="w-full form-input py-2.5 text-sm font-semibold border-b border-gray-200 focus:border-dcpaGold bg-transparent">
-                            <option value="">-- Choose Grade --</option>
-                            <option value="pre-k">Pre-K</option>
-                            <option value="kindergarten">Kindergarten</option>
-                            <option value="grade-1">Grade 1</option>
-                            <option value="grade-2">Grade 2</option>
-                            <option value="grade-3">Grade 3</option>
-                            <option value="grade-4">Grade 4</option>
-                            <option value="grade-5">Grade 5</option>
-                            <option value="middle-school">Middle School (Grades 6-8)</option>
-                        </select>
-                    </div>
-                    
-                    <div class="pt-6">
-                        <button type="submit" class="w-full btn-emerald py-4 rounded-xl font-bold text-xs uppercase tracking-widest shadow-xl transition-all duration-300">SUBMIT APPLICATION</button>
-                    </div>
-                </form>
+                <p class="text-xs text-gray-500 mb-10 leading-relaxed">The application form is hosted by Google Forms so that all submissions are submitted directly into the admissions pipeline. If the embedded form does not display, please open the full form in a new tab.</p>
+
+                <div class="rounded-3xl overflow-hidden border border-gray-200 shadow-lg bg-white">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?embedded=true"
+                        width="100%"
+                        height="1600"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        class="min-h-[900px] w-full"
+                    >Loading…</iframe>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-[10px] text-gray-500 mb-4">If the form is not visible above, open it directly in Google Forms:</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" class="inline-block btn-emerald px-10 py-4 rounded-xl font-bold text-xs uppercase tracking-widest shadow-xl transition-all duration-300">Open Google Form</a>
+                </div>
             </div>
         </div>
     </section>
@@ -219,7 +194,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-12">
                 <div class="space-y-6">
                     <div class="flex items-center space-x-3">
-                        <img src="dcpa-logo.jpeg" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover">
+                        <img src="dcpa-logo.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover">
                         <div>
                             <h3 class="font-bold uppercase text-sm tracking-wide font-serif">Desert Crescent</h3>
                             <p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
@@ -243,7 +218,7 @@
                         <li><a href="admissions.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Admissions</a></li>
                         <li><a href="student-life.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Student Life</a></li>
                         <li><a href="parents.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Parents</a></li>
-                        <li><a href="apply.html" class="hover:text-dcpaGold transition-colors flex items-center font-bold"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Apply Now</a></li>
+                        <li><a href="https://forms.gle/saywXHmF9ZHvQHfj8" target="_blank" rel="noopener noreferrer" class="hover:text-dcpaGold transition-colors flex items-center font-bold"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Apply Now</a></li>
                     </ul>
                 </div>
             </div>

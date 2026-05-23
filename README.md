@@ -46,6 +46,35 @@ To run this project locally:
 
 3. Visit `http://localhost:8000` in your browser
 
+## Running Tests (Playwright)
+
+This repository includes Playwright tests to validate the static site.
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Install Playwright browser binaries (first time only):
+```bash
+npx playwright install --with-deps
+```
+
+3. Run the full Playwright test suite:
+```bash
+npm test
+```
+
+4. Run a lightweight single-run check (headless Chromium):
+```bash
+npm run playwright-check
+```
+
+Notes:
+- Tests run against the local `index.html` using the `file://` protocol.
+- CI: To run tests in CI, ensure `npm ci` (or `npm install`) and `npx playwright install --with-deps` are executed before `npx playwright test`.
+
+
 ## Deployment
 
 This site is automatically deployed to GitHub Pages using the `main` branch. Any changes pushed to `main` will be live within a few minutes.
