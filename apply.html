@@ -168,28 +168,29 @@
                 <h1 class="text-4xl font-serif font-bold text-dcpaGreen mb-3">Application for Admission</h1>
                 <p class="text-xs text-gray-500 mb-10 leading-relaxed">Please enter your basic family details below, then continue to the full Google application form for final submission.</p>
 
-                <form id="apply-form" class="space-y-8" method="GET" action="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form">
-                    <div class="grid grid-cols-1 gap-8">
+                <form id="apply-form" class="space-y-8 bg-white p-6 rounded-3xl shadow-inner shadow-black/5 border border-gray-200" method="GET" action="https://docs.google.com/forms/d/e/1FAIpQLSc7IMFX-5On0NzJnhIVg1JvqPAxViJWLvDjuMwr6o32VwR8Mw/viewform?usp=send_form">
+                    <div class="text-sm text-gray-600 mb-4">Enter the information below, then click submit to continue to the Google Form for the full application process.</div>
+                    <div class="grid grid-cols-1 gap-6">
                         <div>
-                            <label for="parent-name" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent/Guardian Full Name *</label>
-                            <input id="parent-name" name="parent-name" type="text" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Tariq Al-Jamil">
+                            <label for="parent-name" class="block text-[10px] font-bold uppercase text-gray-500 tracking-wider mb-2">Parent/Guardian Full Name *</label>
+                            <input id="parent-name" name="parent-name" type="text" required class="w-full bg-gray-50 text-gray-900 py-3 text-sm font-semibold border border-gray-300 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Tariq Al-Jamil">
                         </div>
                         <div>
-                            <label for="parent-email" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent Email Address *</label>
-                            <input id="parent-email" name="parent-email" type="email" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. parent@example.com">
+                            <label for="parent-email" class="block text-[10px] font-bold uppercase text-gray-500 tracking-wider mb-2">Parent Email Address *</label>
+                            <input id="parent-email" name="parent-email" type="email" required class="w-full bg-gray-50 text-gray-900 py-3 text-sm font-semibold border border-gray-300 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. parent@example.com">
                         </div>
                         <div>
-                            <label for="parent-phone" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Parent Phone Number *</label>
-                            <input id="parent-phone" name="parent-phone" type="tel" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. (480) 333-0123">
+                            <label for="parent-phone" class="block text-[10px] font-bold uppercase text-gray-500 tracking-wider mb-2">Parent Phone Number *</label>
+                            <input id="parent-phone" name="parent-phone" type="tel" required class="w-full bg-gray-50 text-gray-900 py-3 text-sm font-semibold border border-gray-300 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. (480) 333-0123">
                         </div>
                         <div>
-                            <label for="student-name" class="block text-[10px] font-bold uppercase text-gray-400 tracking-wider mb-2">Student Full Name *</label>
-                            <input id="student-name" name="student-name" type="text" required class="w-full form-input py-3 text-sm font-semibold border border-gray-200 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Layla Al-Jamil">
+                            <label for="student-name" class="block text-[10px] font-bold uppercase text-gray-500 tracking-wider mb-2">Student Full Name *</label>
+                            <input id="student-name" name="student-name" type="text" required class="w-full bg-gray-50 text-gray-900 py-3 text-sm font-semibold border border-gray-300 rounded-2xl px-4 focus:outline-none focus:border-dcpaGold focus:ring-2 focus:ring-dcpaGold/20" placeholder="e.g. Layla Al-Jamil">
                         </div>
                     </div>
 
                     <div class="pt-6">
-                        <button type="submit" class="w-full bg-dcpaGreen text-white rounded-2xl py-4 font-bold uppercase tracking-widest text-sm shadow-xl hover:bg-dcpaGold hover:text-dcpaGreen transition-colors duration-300">Submit and Continue</button>
+                        <button type="submit" class="w-full bg-dcpaGold text-dcpaGreen rounded-2xl py-4 font-bold uppercase tracking-widest text-sm shadow-xl border border-dcpaGold hover:bg-white hover:text-dcpaGreen focus:outline-none focus:ring-4 focus:ring-dcpaGold/30 transition-colors duration-300">Submit and Continue</button>
                     </div>
                 </form>
 
