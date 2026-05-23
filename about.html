@@ -6,113 +6,321 @@
     <title>About Us | Desert Crescent Preparatory Academy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        dcpaGreen: '#1B3022',
+                        dcpaGreen: '#0D2214',
                         dcpaGold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['Georgia', 'serif'],
-                        sans: ['Arial', 'sans-serif'],
+                        dcpaLightGreen: '#1E3A27',
                     }
                 }
             }
         }
     </script>
-    <style>
-        .dropdown:hover .dropdown-menu { display: block; }
-        html { scroll-behavior: smooth; }
-    </style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-50">
+<body class="bg-[#FCFAF7] text-gray-800">
 
     <!-- Header / Navigation -->
-    <header class="bg-dcpaGreen text-white shadow-lg sticky top-0 z-50">
+    <header class="glass-header text-white sticky top-0 z-50 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
-            <a href="index.html" class="flex items-center space-x-3">
-                <div class="w-16 h-16 bg-dcpaGold rounded-full flex items-center justify-center text-dcpaGreen font-bold text-xs text-center p-1">DESERT CRESCENT</div>
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="noor_the_falcon.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover group-hover:rotate-6 transition-all duration-500">
                 <div>
-                    <h1 class="text-xl font-bold uppercase tracking-tight">Desert Crescent</h1>
-                    <p class="text-[10px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
+                    <h1 class="text-xl font-bold uppercase tracking-tight font-serif text-white group-hover:text-dcpaGold transition-colors">Desert Crescent</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-dcpaGold font-medium">Preparatory Academy</p>
                 </div>
             </a>
-            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
-                <div class="relative dropdown group">
-                    <a href="about.html" class="text-dcpaGold flex items-center">ABOUT <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
-                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
-                        <a href="#mission" class="block px-4 py-2 hover:bg-gray-100">Mission & Vision</a>
-                        <a href="#leadership" class="block px-4 py-2 hover:bg-gray-100">Leadership</a>
-                        <a href="#history" class="block px-4 py-2 hover:bg-gray-100">Our History</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex space-x-8 items-center text-sm font-medium">
+                <div class="relative dropdown">
+                    <a href="about.html" class="nav-link hover:text-dcpaGold flex items-center py-2">ABOUT <i class="fas fa-chevron-down ml-1.5 text-[9px] opacity-75"></i></a>
+                    <div class="absolute dropdown-menu bg-[#0D2214] text-white mt-2 py-3 w-52 shadow-2xl rounded-xl border border-dcpaGold/20 z-50">
+                        <a href="about.html#mission" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Mission & Vision</a>
+                        <a href="about.html#leadership" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Leadership & Faculty</a>
+                        <a href="about.html#history" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Our History</a>
                     </div>
                 </div>
-                <div class="relative dropdown group">
-                    <a href="academics.html" class="hover:text-dcpaGold flex items-center">ACADEMICS <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
-                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
-                        <a href="academics.html#curriculum" class="block px-4 py-2 hover:bg-gray-100">Curriculum</a>
-                        <a href="academics.html#departments" class="block px-4 py-2 hover:bg-gray-100">Departments</a>
-                        <a href="academics.html#library" class="block px-4 py-2 hover:bg-gray-100">Library</a>
+                <div class="relative dropdown">
+                    <a href="academics.html" class="nav-link hover:text-dcpaGold flex items-center py-2">ACADEMICS <i class="fas fa-chevron-down ml-1.5 text-[9px] opacity-75"></i></a>
+                    <div class="absolute dropdown-menu bg-[#0D2214] text-white mt-2 py-3 w-52 shadow-2xl rounded-xl border border-dcpaGold/20 z-50">
+                        <a href="academics.html#curriculum" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Curriculum</a>
+                        <a href="academics.html#departments" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Departments</a>
+                        <a href="academics.html#library" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">School Library</a>
                     </div>
                 </div>
-                <a href="admissions.html" class="hover:text-dcpaGold">ADMISSIONS</a>
-                <div class="relative dropdown group">
-                    <a href="student-life.html" class="hover:text-dcpaGold flex items-center">STUDENT LIFE <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
-                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
-                        <a href="student-life.html#clubs" class="block px-4 py-2 hover:bg-gray-100">Clubs & Orgs</a>
-                        <a href="student-life.html#athletics" class="block px-4 py-2 hover:bg-gray-100">Athletics</a>
-                        <a href="student-life.html#arts" class="block px-4 py-2 hover:bg-gray-100">Fine Arts</a>
+                <a href="admissions.html" class="nav-link hover:text-dcpaGold py-2">ADMISSIONS</a>
+                <div class="relative dropdown">
+                    <a href="student-life.html" class="nav-link hover:text-dcpaGold flex items-center py-2">STUDENT LIFE <i class="fas fa-chevron-down ml-1.5 text-[9px] opacity-75"></i></a>
+                    <div class="absolute dropdown-menu bg-[#0D2214] text-white mt-2 py-3 w-52 shadow-2xl rounded-xl border border-dcpaGold/20 z-50">
+                        <a href="student-life.html#clubs" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Clubs & Orgs</a>
+                        <a href="student-life.html#athletics" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Athletics</a>
+                        <a href="student-life.html#arts" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Fine Arts</a>
                     </div>
                 </div>
-                <div class="relative dropdown group">
-                    <a href="parents.html" class="hover:text-dcpaGold flex items-center">PARENTS <i class="fas fa-chevron-down ml-1 text-[10px]"></i></a>
-                    <div class="absolute hidden dropdown-menu bg-white text-gray-800 mt-2 py-2 w-48 shadow-xl rounded-md group-hover:block border-t-4 border-dcpaGold">
-                        <a href="parents.html#portal" class="block px-4 py-2 hover:bg-gray-100">Parent Portal</a>
-                        <a href="parents.html#calendar" class="block px-4 py-2 hover:bg-gray-100">Calendar</a>
-                        <a href="parents.html#handbook" class="block px-4 py-2 hover:bg-gray-100">Handbook</a>
+                <div class="relative dropdown">
+                    <a href="parents.html" class="nav-link hover:text-dcpaGold flex items-center py-2">PARENTS <i class="fas fa-chevron-down ml-1.5 text-[9px] opacity-75"></i></a>
+                    <div class="absolute dropdown-menu bg-[#0D2214] text-white mt-2 py-3 w-52 shadow-2xl rounded-xl border border-dcpaGold/20 z-50">
+                        <a href="parents.html#portal" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Parent Portal</a>
+                        <a href="parents.html#calendar" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">School Calendar</a>
+                        <a href="parents.html#handbook" class="block px-5 py-2.5 hover:bg-[#1E3A27] hover:text-dcpaGold transition-colors text-xs font-semibold">Important Documents</a>
                     </div>
                 </div>
-                <a href="apply.html" class="bg-dcpaGold text-dcpaGreen px-6 py-2 rounded-full font-bold hover:bg-yellow-500 transition duration-300">APPLY NOW</a>
+                <a href="apply.html" class="btn-gold px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
             </nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex flex-col justify-center items-center space-y-1.5 focus:outline-none z-50" aria-label="Toggle Menu">
+                <span class="w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+            </button>
         </div>
     </header>
 
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <aside id="mobile-drawer" class="mobile-drawer p-8 flex flex-col justify-between">
+        <div class="space-y-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="noor_the_falcon.png" alt="DCPA Logo" class="w-10 h-10 rounded-full border border-dcpaGold/30 object-cover">
+                    <div>
+                        <h2 class="text-sm font-bold uppercase tracking-tight text-white font-serif">Desert Crescent</h2>
+                        <p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
+                    </div>
+                </div>
+                <button id="close-drawer-btn" class="text-white hover:text-dcpaGold focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Links (Accordions) -->
+            <nav class="space-y-4 pt-6">
+                <!-- ABOUT Accordion -->
+                <div>
+                    <button class="accordion-btn w-full flex justify-between items-center text-sm font-bold text-white hover:text-dcpaGold py-2 transition-colors">
+                        ABOUT <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content pl-4 border-l border-dcpaGold/20 mt-1">
+                        <a href="about.html#mission" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Mission & Vision</a>
+                        <a href="about.html#leadership" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Leadership & Faculty</a>
+                        <a href="about.html#history" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Our History</a>
+                    </div>
+                </div>
+
+                <!-- ACADEMICS Accordion -->
+                <div>
+                    <button class="accordion-btn w-full flex justify-between items-center text-sm font-bold text-white hover:text-dcpaGold py-2 transition-colors">
+                        ACADEMICS <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content pl-4 border-l border-dcpaGold/20 mt-1">
+                        <a href="academics.html#curriculum" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Curriculum</a>
+                        <a href="academics.html#departments" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Departments</a>
+                        <a href="academics.html#library" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">School Library</a>
+                    </div>
+                </div>
+
+                <!-- ADMISSIONS (Direct Link) -->
+                <a href="admissions.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-2 transition-colors">ADMISSIONS</a>
+
+                <!-- STUDENT LIFE Accordion -->
+                <div>
+                    <button class="accordion-btn w-full flex justify-between items-center text-sm font-bold text-white hover:text-dcpaGold py-2 transition-colors">
+                        STUDENT LIFE <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content pl-4 border-l border-dcpaGold/20 mt-1">
+                        <a href="student-life.html#clubs" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Clubs & Orgs</a>
+                        <a href="student-life.html#athletics" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Athletics</a>
+                        <a href="student-life.html#arts" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Fine Arts</a>
+                    </div>
+                </div>
+
+                <!-- PARENTS Accordion -->
+                <div>
+                    <button class="accordion-btn w-full flex justify-between items-center text-sm font-bold text-white hover:text-dcpaGold py-2 transition-colors">
+                        PARENTS <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content pl-4 border-l border-dcpaGold/20 mt-1">
+                        <a href="parents.html#portal" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Parent Portal</a>
+                        <a href="parents.html#calendar" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">School Calendar</a>
+                        <a href="parents.html#handbook" class="block py-2 text-xs text-gray-300 hover:text-dcpaGold">Important Documents</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="pt-8">
+            <a href="apply.html" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all duration-300">APPLY NOW</a>
+        </div>
+    </aside>
+
     <!-- Subpage Hero -->
-    <section class="bg-dcpaGreen text-white py-20 relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20">
+    <section class="bg-dcpaGreen text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-15">
             <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&q=80&w=2070')] bg-cover bg-center"></div>
         </div>
-        <div class="container mx-auto px-6 relative z-10">
-            <h1 class="text-5xl font-serif font-bold">About Us</h1>
-            <p class="text-dcpaGold mt-4 tracking-widest uppercase font-bold">Rooted in Values. Rising to Excellence.</p>
+        <div class="absolute inset-0 bg-gradient-to-t from-dcpaGreen to-dcpaGreen/80 z-1"></div>
+        <div class="container mx-auto px-6 relative z-10 animate-fade-in-up">
+            <span class="text-dcpaGold font-bold tracking-widest uppercase text-xs">Who We Are</span>
+            <h1 class="text-5xl md:text-6xl font-serif font-bold mt-2">About Our Academy</h1>
+            <div class="w-20 h-1 bg-dcpaGold mt-4 rounded-full"></div>
         </div>
     </section>
 
     <!-- Mission & Vision -->
-    <section id="mission" class="py-16">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <h2 class="text-3xl font-serif font-bold text-dcpaGreen mb-6">Our Mission & Vision</h2>
-            <div class="prose prose-lg text-gray-700">
-                <p class="mb-4">Desert Crescent Preparatory Academy (DCPA) is dedicated to providing a high-quality education that integrates rigorous academics with strong moral values. Our mission is to cultivate curious minds, build resilient character, and foster a lifelong love of learning.</p>
+    <section id="mission" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-dcpaGreen">Our Mission & Core Vision</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">Desert Crescent Preparatory Academy (DCPA) is dedicated to providing an elite standard of academic education that perfectly integrates rigorous, state-compliant academics with high moral and spiritual values. We believe in nurturing critical thinking alongside stellar ethical foundations to mold the next generation of leadership.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Our comprehensive academic approaches empower students to exceed state expectations in core STEM, English, and Humanities subjects while cultivating their individual heritage and social character.</p>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="relative p-1 bg-gradient-to-tr from-dcpaGold to-dcpaGreen rounded-3xl shadow-xl">
+                        <div class="bg-[#FCFAF7] p-8 rounded-[22px] space-y-4">
+                            <h3 class="font-serif font-bold text-2xl text-dcpaGreen">Our Golden Rule</h3>
+                            <p class="text-sm text-gray-600 italic">"We work together to inspire knowledge, uphold absolute integrity, and provide a compassionate environment where each student excels."</p>
+                            <div class="border-t border-gray-200 pt-4 flex items-center space-x-3">
+                                <img src="noor_the_falcon.png" alt="Mascot Avatar" class="w-10 h-10 rounded-full object-cover border border-dcpaGold/30">
+                                <div>
+                                    <h4 class="text-xs font-bold uppercase text-dcpaGreen">Dr. Tariq Al-Jamil</h4>
+                                    <p class="text-[9px] text-dcpaGold uppercase font-semibold">Academy Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                <div class="bg-white p-8 rounded-lg shadow-md border-t-4 border-dcpaGold">
-                    <h3 class="font-bold text-dcpaGreen text-xl mb-4">The Pillars of DCPA</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-start"><span class="text-dcpaGold mr-3 font-bold">QURAN:</span><span class="text-sm">Providing spiritual guidance and moral compass.</span></li>
-                        <li class="flex items-start"><span class="text-dcpaGold mr-3 font-bold">ILM:</span><span class="text-sm">The pursuit of knowledge as a lifelong journey.</span></li>
-                        <li class="flex items-start"><span class="text-dcpaGold mr-3 font-bold">AKHLAQ:</span><span class="text-sm">Developing excellent character and ethics.</span></li>
-                        <li class="flex items-start"><span class="text-dcpaGold mr-3 font-bold">AMAL:</span><span class="text-sm">Translating knowledge into positive action.</span></li>
-                    </ul>
+            <div class="mt-20">
+                <h3 class="text-2xl font-serif font-bold text-center text-dcpaGreen mb-12">The Pillars of DCPA</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="glass-card p-8 rounded-2xl border-t-4 border-dcpaGold">
+                        <span class="text-dcpaGold font-serif font-black text-3xl">01</span>
+                        <h4 class="font-bold text-dcpaGreen text-lg mt-3 mb-2 uppercase tracking-wide">QURAN</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Providing deep spiritual values and an unwavering, ethical moral compass for daily life.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border-t-4 border-dcpaGold">
+                        <span class="text-dcpaGold font-serif font-black text-3xl">02</span>
+                        <h4 class="font-bold text-dcpaGreen text-lg mt-3 mb-2 uppercase tracking-wide">ILM</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Celebrating the pursuit of comprehensive academic and scientific knowledge as a lifelong journey.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border-t-4 border-dcpaGold">
+                        <span class="text-dcpaGold font-serif font-black text-3xl">03</span>
+                        <h4 class="font-bold text-dcpaGreen text-lg mt-3 mb-2 uppercase tracking-wide">AKHLAQ</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Developing supreme personal character, complete integrity, humility, and absolute respect.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl border-t-4 border-dcpaGold">
+                        <span class="text-dcpaGold font-serif font-black text-3xl">04</span>
+                        <h4 class="font-bold text-dcpaGreen text-lg mt-3 mb-2 uppercase tracking-wide">AMAL</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Translating classroom knowledge and spiritual beliefs into beautiful, positive community action.</p>
+                    </div>
                 </div>
-                <div id="leadership" class="bg-dcpaGreen text-white p-8 rounded-lg shadow-md">
-                    <h3 class="font-bold text-dcpaGold text-xl mb-4">Leadership & Faculty</h3>
-                    <p class="text-sm opacity-80 mb-4">Our dedicated team of educators is committed to the success of every student. We believe in collaborative leadership that values input from parents and the community.</p>
-                    <div id="history" class="mt-6 border-t border-white/20 pt-4">
-                        <h4 class="font-bold uppercase text-xs tracking-widest text-dcpaGold mb-2">Our History</h4>
-                        <p class="text-xs opacity-60">Founded with a vision for excellence, DCPA has grown into a vibrant community in the heart of the desert.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Faculty -->
+    <section id="leadership" class="py-24 bg-[#FCFAF7] border-t border-gray-100 relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <p class="text-dcpaGold font-bold tracking-widest uppercase text-xs">Exemplary Role Models</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-dcpaGreen">Our Leadership Team</h2>
+                <div class="w-24 h-1 bg-dcpaGold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Leader 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-24 h-24 bg-[#E8F0EA] rounded-full border-2 border-dcpaGold flex items-center justify-center mb-6 overflow-hidden">
+                        <span class="text-2xl font-serif font-bold text-dcpaGreen">TA</span>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-dcpaGreen mb-1">Dr. Tariq Al-Jamil</h3>
+                    <p class="text-xs font-bold uppercase tracking-widest text-dcpaGold mb-4">Academy Principal</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">Dr. Tariq holds a Ph.D. in Education Administration from ASU and has over 20 years of experience in leading academic institutions with moral curriculums.</p>
+                </div>
+
+                <!-- Leader 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-24 h-24 bg-[#E8F0EA] rounded-full border-2 border-dcpaGold flex items-center justify-center mb-6 overflow-hidden">
+                        <span class="text-2xl font-serif font-bold text-dcpaGreen">SV</span>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-dcpaGreen mb-1">Sarah Vance, M.Ed.</h3>
+                    <p class="text-xs font-bold uppercase tracking-widest text-dcpaGold mb-4">Vice Principal</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">Sarah oversees the primary curriculum structures. She holds a Master's degree in Curriculum Development and advocates for integrated STEM structures.</p>
+                </div>
+
+                <!-- Leader 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center text-center">
+                    <div class="w-24 h-24 bg-[#E8F0EA] rounded-full border-2 border-dcpaGold flex items-center justify-center mb-6 overflow-hidden">
+                        <span class="text-2xl font-serif font-bold text-dcpaGreen">FA</span>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-dcpaGreen mb-1">Faisal Al-Masri</h3>
+                    <p class="text-xs font-bold uppercase tracking-widest text-dcpaGold mb-4">Director of Moral Studies</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">Ustadh Faisal leads spiritual instruction, Quranic recitations, and community outreach programs, ensuring a strong value base for all academy students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section id="history" class="py-24 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <p class="text-dcpaGold font-bold tracking-widest uppercase text-xs">Our Heritage</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-dcpaGreen">The Timeline of Excellence</h2>
+                <div class="w-24 h-1 bg-dcpaGold mx-auto rounded-full"></div>
+            </div>
+
+            <div class="relative border-l-2 border-dcpaGold/30 ml-4 md:ml-32 space-y-12">
+                <!-- Timeline 1 -->
+                <div class="relative pl-8 md:pl-12 group step-item">
+                    <div class="absolute -left-[9px] top-1.5 w-4.5 h-4.5 bg-white border-2 border-dcpaGold rounded-full step-circle group-hover:bg-dcpaGold"></div>
+                    <span class="absolute left-[-110px] top-0 hidden md:block text-right w-20 font-serif font-bold text-xl text-dcpaGold">1998</span>
+                    <div class="glass-card p-6 rounded-xl">
+                        <span class="inline-block md:hidden text-xs font-bold text-dcpaGold mb-2 font-serif">1998</span>
+                        <h4 class="font-serif font-bold text-lg text-dcpaGreen mb-2">Academy Foundation</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Desert Crescent was established with a small group of visionary parents and 25 students, seeking a unified academic environment that aligned with values.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline 2 -->
+                <div class="relative pl-8 md:pl-12 group step-item">
+                    <div class="absolute -left-[9px] top-1.5 w-4.5 h-4.5 bg-white border-2 border-dcpaGold rounded-full step-circle group-hover:bg-dcpaGold"></div>
+                    <span class="absolute left-[-110px] top-0 hidden md:block text-right w-20 font-serif font-bold text-xl text-dcpaGold">2008</span>
+                    <div class="glass-card p-6 rounded-xl">
+                        <span class="inline-block md:hidden text-xs font-bold text-dcpaGold mb-2 font-serif">2008</span>
+                        <h4 class="font-serif font-bold text-lg text-dcpaGreen mb-2">Campus Expansion</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">To accommodate growing applications, the school transitioned to a custom-designed facility in Avondale, adding modern science labs and sports zones.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline 3 -->
+                <div class="relative pl-8 md:pl-12 group step-item">
+                    <div class="absolute -left-[9px] top-1.5 w-4.5 h-4.5 bg-white border-2 border-dcpaGold rounded-full step-circle group-hover:bg-dcpaGold"></div>
+                    <span class="absolute left-[-110px] top-0 hidden md:block text-right w-20 font-serif font-bold text-xl text-dcpaGold">2018</span>
+                    <div class="glass-card p-6 rounded-xl">
+                        <span class="inline-block md:hidden text-xs font-bold text-dcpaGold mb-2 font-serif">2018</span>
+                        <h4 class="font-serif font-bold text-lg text-dcpaGreen mb-2">STEM Accreditation</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">DCPA achieved outstanding state scores and formal accreditations for excellence in science and engineering curriculum integration.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline 4 -->
+                <div class="relative pl-8 md:pl-12 group step-item">
+                    <div class="absolute -left-[9px] top-1.5 w-4.5 h-4.5 bg-white border-2 border-dcpaGold rounded-full step-circle group-hover:bg-dcpaGold"></div>
+                    <span class="absolute left-[-110px] top-0 hidden md:block text-right w-20 font-serif font-bold text-xl text-dcpaGold">2026</span>
+                    <div class="glass-card p-6 rounded-xl">
+                        <span class="inline-block md:hidden text-xs font-bold text-dcpaGold mb-2 font-serif">2026</span>
+                        <h4 class="font-serif font-bold text-lg text-dcpaGreen mb-2">Rising Ever Higher</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">Now serving over 400 stellar students across all levels, DCPA stands as a prominent academic and moral beacon in the Avondale community.</p>
                     </div>
                 </div>
             </div>
@@ -120,14 +328,53 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dcpaGreen text-white py-12 border-t-8 border-dcpaGold text-center">
+    <footer class="bg-dcpaGreen text-white py-16 border-t-8 border-dcpaGold">
         <div class="container mx-auto px-6">
-            <p class="text-sm opacity-60 italic mb-4">Rooted in Values. Rising to Excellence.</p>
-            <div class="space-y-2 text-[10px] opacity-40 uppercase tracking-widest">
-                <p>&copy; 2024 Desert Crescent Preparatory Academy. <br> www.desertcrescent.org</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-12">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <img src="noor_the_falcon.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover">
+                        <div>
+                            <h3 class="font-bold uppercase text-sm tracking-wide font-serif">Desert Crescent</h3>
+                            <p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 italic max-w-sm">"Rooted in Values. Rising to Excellence." Fostering moral integrity, academic brilliance, and outstanding leadership in the heart of Avondale.</p>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold uppercase text-sm tracking-widest text-dcpaGold font-serif">Contact Information</h4>
+                    <div class="space-y-3 text-sm text-gray-300">
+                        <p class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3.5 text-dcpaGold"></i><span>10510 w Van Buren Street, Avondale, 85323</span></p>
+                        <p class="flex items-center"><i class="fas fa-phone mr-3.5 text-dcpaGold"></i><span>480.333.0123</span></p>
+                        <p class="flex items-center"><i class="fas fa-envelope mr-3.5 text-dcpaGold"></i><a href="mailto:dcpa.admin@gmail.com" class="hover:text-dcpaGold transition-colors">dcpa.admin@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold uppercase text-sm tracking-widest text-dcpaGold font-serif">Quick Links</h4>
+                    <ul class="text-sm text-gray-300 grid grid-cols-2 gap-3">
+                        <li><a href="about.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Admissions</a></li>
+                        <li><a href="student-life.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Student Life</a></li>
+                        <li><a href="parents.html" class="hover:text-dcpaGold transition-colors flex items-center"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Parents</a></li>
+                        <li><a href="apply.html" class="hover:text-dcpaGold transition-colors flex items-center font-bold"><i class="fas fa-chevron-right text-[8px] mr-2 text-dcpaGold"></i>Apply Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-400 uppercase tracking-widest text-center md:text-left">
+                <p>&copy; 2026 Desert Crescent Preparatory Academy. All Rights Reserved. </p>
+                <div class="flex space-x-6 text-sm text-gray-300">
+                    <a href="#" class="hover:text-dcpaGold transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-dcpaGold transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-dcpaGold transition-colors"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Core Scripts -->
+    <script src="menu.js" defer></script>
 
 </body>
 </html>
