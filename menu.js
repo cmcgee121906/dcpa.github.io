@@ -45,7 +45,56 @@ document.addEventListener('DOMContentLoaded', () => {
   closeDrawerBtn?.addEventListener('click', closeDrawer);
   mobileDrawerOverlay?.addEventListener('click', closeDrawer);
 
-  // 2. Mobile Accordion Menus
+  // 2. Desktop Dropdown Menus
+  const desktopDropdowns = document.querySelectorAll('.dropdown');
+
+  function closeDesktopDropdowns(except = null) {
+    desktopDropdowns.forEach(dropdown => {
+      if (dropdown !== except) {
+        dropdown.classList.remove('open');
+        dropdown.querySelector(':scope > a')?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  desktopDropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(':scope > a');
+    const menu = dropdown.querySelector(':scope > .dropdown-menu');
+    if (!toggle || !menu) return;
+
+    toggle.setAttribute('aria-haspopup', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
+
+    toggle.addEventListener('click', (e) => {
+      // The first click opens the menu; clicking its label again follows the page link.
+      if (!dropdown.classList.contains('open')) {
+        e.preventDefault();
+        closeDesktopDropdowns(dropdown);
+        dropdown.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    toggle.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown' || e.key === ' ') {
+        e.preventDefault();
+        closeDesktopDropdowns(dropdown);
+        dropdown.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+        menu.querySelector('a')?.focus();
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.dropdown')) closeDesktopDropdowns();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDesktopDropdowns();
+  });
+
+  // 3. Mobile Accordion Menus
   const accordionBtns = document.querySelectorAll('.accordion-btn');
   accordionBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -78,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. Highlight Active Navigation Links
+  // 4. Highlight Active Navigation Links
   const currentPath = window.location.pathname;
   const currentFile = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
   
@@ -96,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Client-side Form Validation for apply.html
+  // 5. Client-side Form Validation for apply.html
   const applyForm = document.getElementById('apply-form');
   if (applyForm) {
     applyForm.addEventListener('submit', (e) => {

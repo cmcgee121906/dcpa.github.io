@@ -151,6 +151,12 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   transform: translateY(0) scale(1);
   pointer-events: auto;
 }
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
 
 /* Premium Card Designs */
 .glass-card {
