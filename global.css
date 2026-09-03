@@ -189,6 +189,61 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   background: rgba(13, 34, 20, 0.85);
 }
 
+/* Live School Calendar */
+.live-calendar-shell {
+  border: 1px solid rgba(13, 34, 20, 0.12);
+  border-radius: 1rem;
+  background: #fff;
+  overflow: hidden;
+}
+.live-calendar-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.25rem;
+  background: var(--color-emerald-deep);
+  color: #fff;
+}
+.live-calendar-title { font-size: 1.25rem; font-weight: 700; }
+.live-calendar-nav {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: var(--color-gold-warm);
+  transition: background-color .2s ease, color .2s ease;
+}
+.live-calendar-nav:hover, .live-calendar-nav:focus-visible { background: var(--color-gold-warm); color: var(--color-emerald-deep); outline: none; }
+.live-calendar-weekdays, .live-calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.live-calendar-weekdays { background: var(--color-emerald-mint); color: var(--color-emerald-deep); font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-align: center; text-transform: uppercase; }
+.live-calendar-weekdays span { padding: .65rem .2rem; }
+.live-calendar-day { min-height: 7.35rem; padding: .5rem; text-align: left; border-right: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; background: #fff; cursor: pointer; transition: background-color .2s ease, box-shadow .2s ease; }
+.live-calendar-day:nth-child(7n) { border-right: 0; }
+.live-calendar-day:hover, .live-calendar-day:focus-visible, .live-calendar-day--selected { background: #fffaf0; box-shadow: inset 0 0 0 2px var(--color-gold-warm); outline: none; }
+.live-calendar-day--empty { background: #fafafa; cursor: default; }
+.live-calendar-date { display: block; color: var(--color-emerald-deep); font-size: .8rem; font-weight: 800; margin-bottom: .35rem; }
+.live-calendar-events { display: flex; flex-direction: column; gap: .2rem; }
+.calendar-event { display: block; overflow: hidden; padding: .18rem .28rem; border-radius: .25rem; color: #fff; font-size: .6rem; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.calendar-event--closed { background: #bd5059; }
+.calendar-event--testing { background: #2685a0; }
+.calendar-event--quarter { background: #15966d; }
+.calendar-event--ramadan { background: #7950a2; }
+.calendar-event--event { background: #b67a16; }
+.calendar-event--staff { background: #8a5a2b; }
+.calendar-event-more { color: #6b7280; font-size: .6rem; font-weight: 700; }
+.live-calendar-details { min-height: 4rem; padding: 1rem 1.25rem; background: #fcfaf7; color: #4b5563; font-size: .8rem; }
+.live-calendar-details-date { color: var(--color-emerald-deep); font-weight: 800; margin-bottom: .5rem; }
+.live-calendar-details ul { display: grid; gap: .45rem; list-style: none; margin: 0; padding: 0; }
+.live-calendar-details li { display: flex; align-items: center; gap: .5rem; }
+.live-calendar-details li .calendar-event { display: inline-block; flex: none; font-size: .6rem; white-space: normal; }
+.live-calendar-loading { grid-column: 1 / -1; padding: 2.5rem; text-align: center; color: #6b7280; }
+@media (max-width: 640px) {
+  .live-calendar-weekdays { font-size: .56rem; }
+  .live-calendar-day { min-height: 5.3rem; padding: .3rem; }
+  .calendar-event { font-size: .5rem; padding: .14rem; }
+  .live-calendar-date { font-size: .68rem; }
+}
+
 /* Stepper Component */
 .step-circle {
   transition: all 0.3s ease;

@@ -215,17 +215,25 @@
                     </div>
                     <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTJPq08TR9V9yMTi3Ez5s4RrWUyyLX7WlVp4_xBnfa13AduiWpbfTUMwnypskKQK5ALWW5wAlLgAkD/pubhtml" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-dcpaGold hover:underline uppercase tracking-wider shrink-0">Open calendar <i class="fas fa-external-link-alt ml-1"></i></a>
                 </div>
-                <div class="rounded-xl overflow-hidden border border-gray-200 bg-white shadow-inner">
-                    <iframe
-                        title="Desert Crescent Preparatory Academy live academic calendar"
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTJPq08TR9V9yMTi3Ez5s4RrWUyyLX7WlVp4_xBnfa13AduiWpbfTUMwnypskKQK5ALWW5wAlLgAkD/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
-                        class="w-full h-[680px] border-0"
-                        loading="lazy">
-                    </iframe>
+                <div class="live-calendar-shell" data-calendar-source="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTJPq08TR9V9yMTi3Ez5s4RrWUyyLX7WlVp4_xBnfa13AduiWpbfTUMwnypskKQK5ALWW5wAlLgAkD/pub?gid=302316557&amp;single=true&amp;output=csv">
+                    <div class="live-calendar-toolbar">
+                        <button type="button" class="live-calendar-nav" data-calendar-previous aria-label="Previous month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 class="live-calendar-title" data-calendar-title>School Calendar</h3>
+                        <button type="button" class="live-calendar-nav" data-calendar-next aria-label="Next month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="live-calendar-weekdays" aria-hidden="true">
+                        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                    </div>
+                    <div class="live-calendar-grid" data-calendar-grid aria-live="polite">
+                        <p class="live-calendar-loading">Loading calendar…</p>
+                    </div>
+                    <div class="live-calendar-details" data-calendar-details>
+                        <p>Select a date to view its school events.</p>
+                    </div>
                 </div>
                 <div class="mt-5 flex flex-wrap gap-4 text-xs font-semibold">
                     <a href="./docs/DCPA%2026-27%20Academic%20Calendar%20.pdf" target="_blank" rel="noopener noreferrer" class="text-dcpaGreen hover:text-dcpaGold transition-colors"><i class="fas fa-file-pdf mr-2 text-dcpaGold"></i>Download PDF version</a>
-                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTJPq08TR9V9yMTi3Ez5s4RrWUyyLX7WlVp4_xBnfa13AduiWpbfTUMwnypskKQK5ALWW5wAlLgAkD/pubhtml" target="_blank" rel="noopener noreferrer" class="text-dcpaGreen hover:text-dcpaGold transition-colors"><i class="fas fa-table mr-2 text-dcpaGold"></i>Open Google Sheet</a>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTJPq08TR9V9yMTi3Ez5s4RrWUyyLX7WlVp4_xBnfa13AduiWpbfTUMwnypskKQK5ALWW5wAlLgAkD/pubhtml?gid=302316557&amp;single=true" target="_blank" rel="noopener noreferrer" class="text-dcpaGreen hover:text-dcpaGold transition-colors"><i class="fas fa-table mr-2 text-dcpaGold"></i>Open Google Sheet</a>
                 </div>
             </div>
 
@@ -325,6 +333,7 @@
 
     <!-- Core Scripts -->
     <script src="menu.js" defer></script>
+    <script src="calendar.js" defer></script>
 
 </body>
 </html>
