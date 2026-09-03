@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const previous = calendar.querySelector('[data-calendar-previous]');
   const next = calendar.querySelector('[data-calendar-next]');
   const categoryClass = {
-    'Holiday/ School Closed': 'calendar-event--closed',
-    'Benchmark Testing': 'calendar-event--testing',
-    'Standardized Testing': 'calendar-event--testing',
+    'Staff Orientation': 'calendar-event--staff-orientation',
+    'Parent Orientation': 'calendar-event--parent-orientation',
+    'First day for students': 'calendar-event--first-day',
+    'Benchmark Testing': 'calendar-event--benchmark-testing',
     'Start/End of Quarter': 'calendar-event--quarter',
-    'School Events': 'calendar-event--event',
-    'First day for students': 'calendar-event--event',
-    'Last Day of School': 'calendar-event--event',
-    'Staff Orientation': 'calendar-event--staff',
-    'Parent Orientation': 'calendar-event--staff'
+    'Last Day of School': 'calendar-event--last-day',
+    'Holiday/ School Closed': 'calendar-event--closed',
+    'Standardized Testing': 'calendar-event--standardized-testing',
+    'School Events': 'calendar-event--school-event'
   };
   const monthFormatter = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' });
   const dateFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });

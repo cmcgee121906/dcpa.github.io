@@ -224,12 +224,15 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .live-calendar-date { display: block; color: var(--color-emerald-deep); font-size: .8rem; font-weight: 800; margin-bottom: .35rem; }
 .live-calendar-events { display: flex; flex-direction: column; gap: .2rem; }
 .calendar-event { display: block; overflow: hidden; padding: .18rem .28rem; border-radius: .25rem; color: #fff; font-size: .6rem; font-weight: 700; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
-.calendar-event--closed { background: #bd5059; }
-.calendar-event--testing { background: #2685a0; }
-.calendar-event--quarter { background: #15966d; }
-.calendar-event--ramadan { background: #7950a2; }
-.calendar-event--event { background: #b67a16; }
-.calendar-event--staff { background: #8a5a2b; }
+.calendar-event--staff-orientation { background: #ef9f2f; color: #1c241e; }
+.calendar-event--parent-orientation { background: #f4cc6a; color: #1c241e; }
+.calendar-event--first-day { background: #3d70a5; }
+.calendar-event--benchmark-testing { background: #24c854; color: #102918; }
+.calendar-event--quarter { background: #167344; }
+.calendar-event--last-day { background: #ed8d2a; color: #1c241e; }
+.calendar-event--closed { background: #d45c66; }
+.calendar-event--standardized-testing { background: #9ed6e5; color: #163342; }
+.calendar-event--school-event { background: #b7dce8; color: #163342; }
 .calendar-event-more { color: #6b7280; font-size: .6rem; font-weight: 700; }
 .live-calendar-details { min-height: 4rem; padding: 1rem 1.25rem; background: #fcfaf7; color: #4b5563; font-size: .8rem; }
 .live-calendar-details-date { color: var(--color-emerald-deep); font-weight: 800; margin-bottom: .5rem; }
