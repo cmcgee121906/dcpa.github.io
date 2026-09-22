@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Desert Crescent Preparatory Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { dcpaGreen: '#0D2214', dcpaGold: '#D4AF37', dcpaLightGreen: '#1E3A27' } } }
+        }
+    </script>
+</head>
+<body class="bg-[#FCFAF7] text-gray-800">
+    <header class="glass-header text-white sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <img src="dcpa-logo.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover">
+                <div>
+                    <h1 class="text-xl font-bold uppercase tracking-tight font-serif text-white">Desert Crescent</h1>
+                    <p class="text-[10px] uppercase tracking-widest text-dcpaGold font-medium">Preparatory Academy</p>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                <a href="about.html" class="nav-link hover:text-dcpaGold py-2">ABOUT</a>
+                <a href="academics.html" class="nav-link hover:text-dcpaGold py-2">ACADEMICS</a>
+                <a href="admissions.html" class="nav-link hover:text-dcpaGold py-2">ADMISSIONS</a>
+                <a href="student-life.html" class="nav-link hover:text-dcpaGold py-2">STUDENT LIFE</a>
+                <a href="parents.html" class="nav-link hover:text-dcpaGold py-2">PARENTS</a>
+                <a href="donate.html" aria-current="page" class="text-dcpaGold py-2 font-bold">DONATE</a>
+                <a href="apply.html" target="_blank" rel="noopener noreferrer" class="btn-gold px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-wider">APPLY NOW</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 flex flex-col justify-center items-center space-y-1.5 focus:outline-none z-50" aria-label="Toggle Menu">
+                <span class="w-6 h-0.5 bg-white rounded-full"></span><span class="w-6 h-0.5 bg-white rounded-full"></span><span class="w-6 h-0.5 bg-white rounded-full"></span>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
+    <aside id="mobile-drawer" class="mobile-drawer p-8 flex flex-col justify-between">
+        <div class="space-y-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="dcpa-logo.png" alt="DCPA Logo" class="w-10 h-10 rounded-full border border-dcpaGold/30 object-cover">
+                    <div><h2 class="text-sm font-bold uppercase tracking-tight text-white font-serif">Desert Crescent</h2><p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p></div>
+                </div>
+                <button id="close-drawer-btn" class="text-white hover:text-dcpaGold focus:outline-none" aria-label="Close Menu"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <nav class="space-y-1 pt-6">
+                <a href="about.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-3">ABOUT</a>
+                <a href="academics.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-3">ACADEMICS</a>
+                <a href="admissions.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-3">ADMISSIONS</a>
+                <a href="student-life.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-3">STUDENT LIFE</a>
+                <a href="parents.html" class="block text-sm font-bold text-white hover:text-dcpaGold py-3">PARENTS</a>
+                <a href="donate.html" aria-current="page" class="block text-sm font-bold text-dcpaGold py-3">DONATE</a>
+            </nav>
+        </div>
+        <a href="apply.html" target="_blank" rel="noopener noreferrer" class="btn-gold w-full block text-center py-3 rounded-full font-bold text-xs uppercase tracking-wider">APPLY NOW</a>
+    </aside>
+
+    <main>
+        <section class="relative overflow-hidden bg-dcpaGreen text-white py-20 md:py-28">
+            <div class="absolute inset-0 opacity-10" aria-hidden="true"><div class="w-full h-full bg-[radial-gradient(circle_at_top_right,_#D4AF37,_transparent_42%)]"></div></div>
+            <div class="container mx-auto px-6 relative text-center max-w-4xl">
+                <p class="text-dcpaGold font-bold tracking-[0.2em] uppercase text-xs mb-5">Support Desert Crescent Preparatory Academy</p>
+                <h2 class="text-4xl md:text-6xl font-serif font-bold">Invest in the next generation.</h2>
+                <p class="mt-6 text-lg text-gray-200 leading-relaxed max-w-2xl mx-auto">Your charitable gift helps DCPA provide an exceptional, faith-centered education for our students.</p>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 max-w-6xl grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div>
+                    <p class="text-dcpaGold font-bold tracking-[0.18em] uppercase text-xs mb-4">Donate Directly to DCPA</p>
+                    <h3 class="text-3xl md:text-4xl font-serif font-bold text-dcpaGreen leading-tight">School support + charitable giving</h3>
+                    <p class="mt-6 text-gray-600 leading-relaxed text-lg">Direct gifts support DCPA programs, curriculum, technology, safety, facilities, Islamic Studies, enrichment, and operations.</p>
+                    <div class="mt-8 grid gap-4">
+                        <div class="rounded-xl border border-dcpaGold/30 bg-white p-5 shadow-sm"><p class="text-xs uppercase font-bold tracking-widest text-gray-500">Zelle username</p><p class="mt-1 text-2xl font-bold text-dcpaGreen">DCPA23</p></div>
+                        <div class="rounded-xl border border-dcpaGold/30 bg-white p-5 shadow-sm"><p class="text-xs uppercase font-bold tracking-widest text-gray-500">Employer identification number</p><p class="mt-1 text-2xl font-bold text-dcpaGreen">41-4772513</p></div>
+                    </div>
+                    <div class="mt-7 flex items-start gap-3 text-sm text-gray-600"><i class="fas fa-circle-check mt-1 text-dcpaGold"></i><p>DCPA is a 501(c)(3) nonprofit organization. Qualifying gifts may be federally deductible.</p></div>
+                </div>
+                <figure class="rounded-3xl overflow-hidden bg-white border border-dcpaGold/40 shadow-xl p-2 md:p-4">
+                    <img src="assets/dcpa-donation-qr.png" alt="DCPA donation QR code and giving information" class="w-full h-auto rounded-2xl" loading="eager">
+                    <figcaption class="sr-only">Scan the QR code to donate directly to Desert Crescent Preparatory Academy.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="bg-[#F4EFE5] py-16">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <i class="fas fa-heart text-3xl text-dcpaGold" aria-hidden="true"></i>
+                <h3 class="mt-4 text-3xl font-serif font-bold text-dcpaGreen">Every gift makes a difference.</h3>
+                <p class="mt-4 text-gray-600 leading-relaxed">Thank you for helping DCPA build a strong foundation of faith, knowledge, character, and excellence.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#08140D] text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-10 pb-12">
+                <div><div class="flex items-center space-x-3"><img src="dcpa-logo.png" alt="DCPA Logo" class="w-12 h-12 rounded-full border border-dcpaGold/30 object-cover"><div><h3 class="font-bold uppercase text-sm tracking-wide font-serif">Desert Crescent</h3><p class="text-[8px] uppercase tracking-widest text-dcpaGold">Preparatory Academy</p></div></div><p class="mt-5 text-sm text-gray-300 italic max-w-sm">"Rooted in Values. Rising to Excellence."</p></div>
+                <div><h4 class="font-bold uppercase text-sm tracking-widest text-dcpaGold font-serif mb-5">Contact Information</h4><div class="space-y-3 text-sm text-gray-300"><p><i class="fas fa-map-marker-alt mr-3 text-dcpaGold"></i>10510 W Van Buren Street, Avondale, 85323</p><p><i class="fas fa-phone mr-3 text-dcpaGold"></i>623.866.5824</p><p><i class="fas fa-envelope mr-3 text-dcpaGold"></i><a href="mailto:dcpa.admin@gmail.com" class="hover:text-dcpaGold">dcpa.admin@gmail.com</a></p></div></div>
+                <div><h4 class="font-bold uppercase text-sm tracking-widest text-dcpaGold font-serif mb-5">Quick Links</h4><ul class="text-sm text-gray-300 grid grid-cols-2 gap-3"><li><a href="about.html" class="hover:text-dcpaGold">About Us</a></li><li><a href="academics.html" class="hover:text-dcpaGold">Academics</a></li><li><a href="admissions.html" class="hover:text-dcpaGold">Admissions</a></li><li><a href="student-life.html" class="hover:text-dcpaGold">Student Life</a></li><li><a href="parents.html" class="hover:text-dcpaGold">Parents</a></li><li><a href="donate.html" class="text-dcpaGold font-bold">Donate</a></li></ul></div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-[10px] text-gray-400 uppercase tracking-widest text-center"><p>&copy; 2026 Desert Crescent Preparatory Academy. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+    <script src="menu.js" defer></script>
+</body>
+</html>
